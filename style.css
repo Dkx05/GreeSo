@@ -1,0 +1,467 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+header, footer {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #1b5e20;
+}
+
+/* Front Page Styles */
+body.front-page {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+}
+
+.front-page header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 2rem;
+}
+
+.front-page .intro {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.front-page .cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.front-page footer {
+    background-color: #1b5e20;
+    color: white;
+}
+
+/* Sort Page Styles */
+body.sort-page {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.sort-page header {
+    background-color: #1b5e20;
+    color: white;
+}
+
+.sort-page header a {
+    color: white;
+    text-decoration: none;
+}
+
+.sort-page .sorter {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #e8f5e9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #a5d6a7;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.input-group .btn {
+    border-radius: 0 4px 4px 0;
+}
+
+.results {
+    background-color: #f1f8e9;
+    padding: 1rem;
+    border-radius: 4px;
+    min-height: 100px;
+}
+
+#wordResults {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#wordResults span {
+    background-color: #a5d6a7;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.sort-page footer {
+    background-color: #1b5e20;
+    color: white;
+}
+
+/* Center the button more visibly on the front page */
+.front-page main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+/* Frog Page Styling */
+body.frog-theme {
+    background-color: #2e7d32;
+    /* plain green */
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.frog-theme .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.frog-theme h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.frog-theme p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.frog-theme .btn.light-green {
+    background-color: #a5d6a7;
+    /* light green */
+    color: #1b5e20;
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.frog-img {
+    width: 200px;
+    margin: 2rem auto 0;
+    display: block;
+}
+
+/* Frog-themed full layout */
+body.frog-theme {
+    background-color: #2e7d32;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    padding-bottom: 150px;
+    /* for frog image space */
+}
+
+/* Main Title */
+.main-title {
+    font-size: 4rem;
+    margin-top: 20vh;
+    margin-bottom: 0.5rem;
+}
+
+/* Cursive tagline */
+.tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #d0f0d0;
+    margin-bottom: 2rem;
+}
+
+/* Unique button style */
+.frofro-btn {
+    background-color: #b9fbc0;
+    color: #1b5e20;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 999px;
+    border: 2px dashed #1b5e20;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.frofro-btn:hover {
+    background-color: #a5d6a7;
+    transform: scale(1.05);
+}
+
+/* Frog image at bottom like cutout */
+.frog-img-cutout {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    max-width: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Overall green theme */
+body.frog-theme {
+    background-color: #2e7d32;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    padding-bottom: 80px;
+    /* space for emoji */
+}
+
+/* Title centered mid-top */
+.main-title {
+    font-size: 4rem;
+    margin-top: 20vh;
+    margin-bottom: 0.5rem;
+}
+
+/* Cursive small tagline */
+.tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #d0f0d0;
+    margin-bottom: 2rem;
+}
+
+/* Unique "frofro" button */
+.frofro-btn {
+    background-color: #b9fbc0;
+    color: #1b5e20;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 999px;
+    border: 2px dashed #1b5e20;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.frofro-btn:hover {
+    background-color: #a5d6a7;
+    transform: scale(1.05);
+}
+
+/* Frog emoji at bottom like a mascot */
+.frog-emoji {
+    font-size: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+    user-select: none;
+}
+
+/* Full green theme layout */
+body.frog-theme {
+    background-color: #2e7d32;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title: Big, centered */
+.main-title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Small cursive tagline */
+.tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #d0f0d0;
+    margin-bottom: 3rem;
+}
+
+/* Elegant tiny frofro button */
+.GOfro-btn {
+    font-size: 0.75rem;
+    background-color: #e0fbe2;
+    color: #1b5e20;
+    padding: 0.4rem 1rem;
+    border: 1px solid #81c784;
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.GOfro-btn:hover {
+    background-color: #c8e6c9;
+    transform: scale(1.05);
+}
+
+/* Frog emoji directly under the button */
+.frog-emoji {
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+    user-select: none;
+}
+
+/* Green Theme Layout */
+body.frog-theme {
+    background-color: #2e7d32;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Wrapper centers everything */
+.wrapper {
+    text-align: center;
+}
+
+/* Title: Big and centered */
+.main-title {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Cursive tagline */
+.tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #d0f0d0;
+    margin-bottom: 4rem;
+    /* Space below tagline */
+}
+
+/* Elegant frofro button – moved downward */
+.GOfro-btn {
+    font-size: 0.75rem;
+    background-color: #e0fbe2;
+    color: #1b5e20;
+    padding: 0.4rem 1rem;
+    border: 1px solid #81c784;
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    /* Move button lower */
+}
+
+.GOfro-btn:hover {
+    background-color: #223a23;
+    transform: scale(1.05);
+}
+
+/* Big frog emoji just under button */
+.frog-emoji {
+    font-size: 10rem;
+    margin-top: 1rem;
+    line-height: 1;
+    user-select: none;
+}

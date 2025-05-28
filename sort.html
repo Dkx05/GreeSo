@@ -1,0 +1,38 @@
+<!-- sort.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Sorter | GreeSo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="sort-page">
+    <header>
+        <h1><a href="index.html">GreeSo</a></h1>
+    </header>
+    
+    <main>
+        <section class="sorter">
+            <h2>Word Sorter</h2>
+            <p>Enter jumbled letters below to find possible words:</p>
+            
+            <div class="input-group">
+                <input type="text" id="jumbledLetters" placeholder="e.g., GEDGTYDWRVWVWADBHFITY">
+                <button id="sortBtn" class="btn">Sort</button>
+            </div>
+            
+            <div class="results">
+                <h3>Possible Words:</h3>
+                <div id="wordResults"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Word sorting tool</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
